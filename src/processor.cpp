@@ -18,7 +18,7 @@ float Processor::Utilization() {
   long TotalDiff=Total-PrevTotal_;
   long IdleDiff=Idle-PrevIdle_;
 
-  Cpu_Percentage_= (TotalDiff-IdleDiff)/TotalDiff;
+  Cpu_Percentage_=(float)(TotalDiff-IdleDiff)/TotalDiff;
 
   PrevTotal_=Total;
   PrevIdle_=Idle;
